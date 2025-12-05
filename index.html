@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <!--Made by Jessica Lu on Nov 19 2025-->
+
+    <title>CheerAngels Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <style>
+      h2 {
+        font-family: "DM Sans", sans-serif;
+        font-size: 36px;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      h3 {
+        font-family: "DM Sans", sans-serif;
+        font-size: 24px;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      h4 {
+        font-family: "DM Sans", sans-serif;
+        font-size: 24px;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      p {
+        font-family: "DM Sans", sans-serif;
+        font-size: 18px;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 25px;
+      }
+
+      ul {
+        font-family: "DM Sans", sans-serif;
+        font-size: 18px;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 25px;
+      }
+
+      /* Centered 1200px container */
+      body {
+        width: 1200px;
+        margin: 0 auto;
+      }
+
+      header {
+        width: 1160px;
+        height: 80px;
+        background: linear-gradient(to bottom, white, #ECF2FF);
+        list-style: none;
+        display: inline-block;
+        align-items: left;
+        font-size: 1em;
+        padding: 20px;
+
+      }
+
+      .logo {
+        height: 80px;
+      }
+
+      nav {
+        float: right;
+        display: inline-block;
+        margin: 15px;
+      }
+
+      nav li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        font-size: 1em;
+        text-align: right;
+
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #457FFF;
+        margin-right: 20px;
+
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+        color: #8BAEFF;
+      }
+
+
+      #hero {
+        width: 1200px;
+        background-size: cover;
+        background-image: url('hero_back2.png');
+        background-position: center;
+      }
+
+      #hero .container {
+        padding: 200px 0;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      #hero a {
+        display: inline-block;
+        background-color: #fff;
+        width: 200px;
+        height: 90px;
+        vertical-align: middle;
+        text-align: center;
+        overflow: visible;
+        cursor: pointer;
+      }
+
+      #what-we-do .container {
+        display: grid;
+        width: 1200px;
+        grid-template-columns: 30% 30% 30%;
+        gap: 2%;
+        justify-content: center;
+        margin-bottom: 100px;
+      }
+
+      #what-we-do h2 {
+        text-align: center;
+        margin-top: 100px;
+        color: #457FFF;
+      }
+
+      #what-we-do .grid-item {
+        background: linear-gradient(to bottom, #5F90FF, #457FFF);
+        text-align: center;
+        padding: 10% 8%;
+        padding-bottom: 20%;
+        color: white;
+      }
+
+      #what-we-do p {
+        padding: 0 10%
+      }
+
+      #what-we-do img {
+        width: 50px;
+        padding-top: 15%;
+      }
+
+      #what-we-do ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      #our-beliefs .container {
+        width: 1200px;
+        margin: auto;
+      }
+
+      #our-beliefs .top-image {
+        width: 100%;
+        display: block;
+      }
+
+      /* TWO-COLUMN GRID */
+      #our-beliefs .beliefs-grid {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        margin: 40px 80px;
+      }
+
+      #our-beliefs .left h2 {
+        margin-top: 10px;
+        color: #457FFF;
+      }
+
+      #our-beliefs .quote-row {
+        display: flex;
+        grid-template-columns: 80% 20%;
+        margin-top: 40px;
+        align-items: center;
+        justify-self: center;
+        gap: 40px;
+        background: linear-gradient(to bottom, #ECF2FF, #DEE9FF);
+        color: #457FFF;
+        padding: 5px 40px;
+
+      }
+
+      #our-beliefs .megaphone-img {
+        width: 50px;
+        justify-self: center;
+      }
+
+
+      #about-us .container{
+        display: grid;
+        margin: auto;
+        width: 1200px;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+      }
+      
+      #about-us img{
+        width: 80%;
+        display: block;
+        margin: auto auto;
+      }
+      
+      footer {
+        margin: 20px;
+        background: #f2f2f2;
+        padding: 40px 0;
+        border-top: 1px solid #ddd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="header_logo.png" class="logo" alt="logo">
+        <nav>
+          <ul>
+            <li><a href="#what-we-do"> What We Do</a></li>
+            <li><a href="#our-beliefs"> Our Beliefs</a></li>
+            <li><a href="#events"> Events</a></li>
+            <li><a href="#about-us"> About Us</a></li>
+            <li><a href="#contact"> Get In Touch</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div>
+
+
+      <section id="hero" class="body-section">
+        <div class="container">
+          <h1>Not just a dance team</h1>
+          <p>Get a move on, you belong here</p>
+          <div class="link-button">
+            <a href="/">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2 — WHAT WE DOS -->
+      <section id="what-we-do">
+        <h2>WHAT WE DO</h2>
+        <div class="container">
+          <div class="grid-item">
+            <img src="community_performances1.png" alt="">
+            <h4>Community Performances</h4>
+            <p>Attend a variety of cultural, fundraising, festival, and charity events.</p>
+            <p>Bringing joy, energy, and passion to public spaces.</p>
+          </div>
+
+          <div class="grid-item">
+            <img src="official_cheer_stations1.png" alt="">
+            <h4>Official Cheer Station</h4>
+            <p>Partnered with multiple Toronto marathons including:</p>
+            <ul>
+              <li>Toronto Waterfront Marathon</li>
+              <li>Toronto Marathon</li>
+              <li>Mississauga Marathon</li>
+              <li>Ottawa Marathon</li>
+            </ul>
+          </div>
+
+          <div class="grid-item">
+            <img src="group_rehearsals1.png" alt="">
+            <h4>Group Rehearsals</h4>
+            <p>Structured weekly practices learning unified choreography.</p>
+            <p>Build teamwork, confidence, and stage presence.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SECTION 3 — OUR BELIEFS -->
+      <section id="our-beliefs" class="body-section">
+        <div class="container">
+
+          <!-- TOP FULL-WIDTH IMAGE -->
+          <img class="top-image" src="our_beliefs_top1.png" alt="">
+
+          <!-- TWO-COLUMN GRID: TITLE LEFT, TEXT RIGHT -->
+          <div class="beliefs-grid">
+            <div class="left">
+              <h2>OUR BELIEFS</h2>
+            </div>
+
+            <div class="right">
+              <p>CheerAngels is not just a dance team. We are an energy machine, fuelling runners
+                with warmth and spirit. We cheer as runners and we dance with passion.</p>
+
+              <p>Whether you want to stay healthy, build confidence, or put on a show, you belong here.</p>
+            </div>
+          </div>
+
+          <div class="quote-row">
+            <h4 class="beliefs-quote">
+              “We are runners who can dance, and dancers who cheer with all their hearts!”
+            </h4>
+
+            <img class="megaphone-img" src="our_beliefs_megaphone.png" alt="megaphone image">
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SECTION 4 — EVENTS -->
+      <section id="events" class="body-section">
+        <div class="container">
+          <h2>EVENTS</h2>
+
+          <h3>Past Events</h3>
+          <ul>
+            <li>Waterfront Marathon 2023</li>
+            <li>Toronto Marathon 2023</li>
+            <li>Mississauga Marathon 2024</li>
+            <li>RBC Run for Kids 2024</li>
+          </ul>
+
+          <h3>Upcoming Events</h3>
+          <ul>
+            <li>April 26, 2026 — Mississauga Marathon</li>
+            <li>May 3, 2026 — Toronto Marathon</li>
+            <li>October 17, 2026 — Waterfront Marathon</li>
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- SECTION 5 — ABOUT US -->
+      <section id="about-us" class="body-section">
+        <div class="container">
+          <div class="grid-item">
+
+
+            <h2>ABOUT US</h2>
+
+            <p>CheerAngels is founded by Helen Ding, an Official Zumba Instructor, a passionate runner, and a lifelong dance enthusiast.</p>
+
+            <p>Over the past few years, she has led the team to cheer at major marathon events across Toronto, bringing energy and encouragement through music, movement, and genuine passion.</p>
+
+            <p>Helen insists on high-quality performance standards and values the true spirit of marathon running. She volunteers her time to lead the team and believes in cheering with real love and action.</p>
+
+            <p>CheerAngels began as a small team in 2020. Five years later, it has grown into a powerful and united community of spirited volunteers. They’ve come a long way, and in 2025 were crowned <b>Champion Cheer Station at the 2025 TCS Toronto Waterfront Marathon.</b></p>
+          </div>
+          <div class="grid-item">
+            <img src="about_us_helen.png" alt="">
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SECTION 6 — CONTACT -->
+      <section id="contact" class="body-section">
+        <div class="container">
+          <h2>CONTACT</h2>
+
+          <p>Email: <a href="mailto:cheerangelstoronto@gmail.com">cheerangelstoronto@gmail.com</a></p>
+          <p>Phone: 647-512-5124</p>
+
+          <div class="link-button">
+            <a href="#">Start dancing today!</a>
+          </div>
+
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Instagram</li>
+            <li>WeChat</li>
+            <li>Facebook</li>
+            <li>Email</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p>© 2025 CheerAngels. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
