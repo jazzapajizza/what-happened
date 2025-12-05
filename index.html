@@ -16,11 +16,12 @@
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
+        color: #457FFF;
       }
 
       h3 {
         font-family: "DM Sans", sans-serif;
-        font-size: 24px;
+        font-size: 32px;
         font-optical-sizing: auto;
         font-weight: 300;
         font-style: normal;
@@ -56,7 +57,7 @@
       .page-container {
         max-width: 1200px;
         margin: 0 auto;
-        background: yellow;
+        background: LightGray
       }
 
       header {
@@ -131,7 +132,7 @@
       #what-we-do .container {
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        gap: 2%;
+        gap: 20px;
         justify-content: center;
         margin-bottom: 100px;
       }
@@ -139,24 +140,23 @@
       #what-we-do h2 {
         text-align: center;
         margin-top: 100px;
-        color: #457FFF;
       }
 
       #what-we-do .grid-item {
         background: linear-gradient(to bottom, #5F90FF, #457FFF);
         text-align: center;
-        padding: 10% 8%;
-        padding-bottom: 20%;
+        padding: 50px 30px;
+        padding-bottom: 80px;
         color: white;
       }
 
       #what-we-do p {
-        padding: 0 10%
+        padding: 0 30px
       }
 
       #what-we-do img {
         width: 50px;
-        padding-top: 15%;
+        padding-top: 40px;
       }
 
       #what-we-do ul {
@@ -176,12 +176,12 @@
       #our-beliefs .beliefs-grid {
         display: grid;
         grid-template-columns: 30% 70%;
-        margin: 40px 80px;
+        margin: 40px 100px;
       }
 
       #our-beliefs .left h2 {
         margin-top: 10px;
-        color: #457FFF;
+        margin-left: 20px;
       }
 
       #our-beliefs .quote-row {
@@ -190,10 +190,10 @@
         margin-top: 40px;
         align-items: center;
         justify-self: center;
-        gap: 40px;
+        gap: 100px;
         background: linear-gradient(to bottom, #ECF2FF, #DEE9FF);
         color: #457FFF;
-        padding: 5px 40px;
+        padding: 5px 100px;
 
       }
 
@@ -201,8 +201,23 @@
         width: 50px;
         justify-self: center;
       }
-
-
+      
+      #events .grid-item img {
+        width: 100%
+      }
+      
+      
+      #events #past-events {
+        display: grid;
+        grid-template-columns: 44.1% 44.1%;
+        justify-content: center;
+        gap: 20px;
+      }
+      
+      #events h4 {
+        text-align: center
+      }
+      
       #about-us .container {
         display: grid;
         grid-template-columns: 60% 30%;
@@ -213,7 +228,7 @@
       #about-us img {
         display: block;
         width: 100%;
-        margin: 0 0;
+        margin: 40px 0;
       }
 
       footer {
@@ -304,7 +319,7 @@
                 <p>CheerAngels is not just a dance team. We are an energy machine, fuelling runners
                   with warmth and spirit. We cheer as runners and we dance with passion.</p>
 
-                <p>Whether you want to stay healthy, build confidence, or put on a show, you belong here.</p>
+                <p>For those who want to stay healthy, build confidence, or put on a show.</p>
               </div>
             </div>
 
@@ -321,17 +336,32 @@
 
         <!-- SECTION 4 — EVENTS -->
         <section id="events" class="body-section">
-          <div class="container">
             <h2>EVENTS</h2>
-
             <h3>Past Events</h3>
-            <ul>
-              <li>Waterfront Marathon 2023</li>
-              <li>Toronto Marathon 2023</li>
-              <li>Mississauga Marathon 2024</li>
-              <li>RBC Run for Kids 2024</li>
-            </ul>
-
+          
+          <div class="container" id="past-events">
+              
+            <div class="grid-item">
+              <img src="waterfront_2023_1.png" alt="description of image">
+              <h4>Waterfront Marathon 2023</h4>   
+            </div>
+            
+            <div class="grid-item">
+              <img src="toronto_2023.png" alt="description of image">
+              <h4>Toronto Marathon 2023</h4>
+            </div>
+            
+            <div class="grid-item">
+              <img src="missisauga_2024.png"  alt="description of image">
+              <h4>Mississauga Marathon 2024</h4>
+            </div>
+            
+            <div class="grid-item">
+              <img src="rbc_2024.png" class="section" alt="description of image">
+              <h4>RBC Run for Kids 2024</h4>
+            </div>
+          </div>
+          <div class="container" id="upcoming-events">
             <h3>Upcoming Events</h3>
             <ul>
               <li>April 26, 2026 — Mississauga Marathon</li>
