@@ -188,7 +188,7 @@
       #our-beliefs .quote-row {
         display: flex;
         grid-template-columns: 80% 20%;
-        margin-top: 40px;
+        margin-top: 70px;
         align-items: center;
         justify-self: center;
         gap: 100px;
@@ -241,52 +241,60 @@
         padding: 15px 30px;
         width: max-content;
       }
-      
-      #upcoming-events{
+
+      #upcoming-events {
         text-align: center;
       }
 
+      #events #upcoming-events h2{
+        margin-top: 50px;
+        margin-bottom: 10px;
+      }
 
+      .events-table {
+        margin: 0 auto;
+        /* center the table */
+        border-collapse: separate;
+        /* allow spacing between rows */
+        border-spacing: 0 20px;
+        /* vertical gap between rows */
+        width: 100%;
+        /* optional: control width */
+        max-width: 957px;
+      }
 
-.events-table {
-  margin: 0 auto;              /* center the table */
-  border-collapse: separate;    /* allow spacing between rows */
-  border-spacing: 0 20px;      /* vertical gap between rows */
-  width: 100%;                   /* optional: control width */
-  max-width: 957px;
-}
+      .event-row {
+        background: linear-gradient(to bottom, #ECF2FF, #DEE9FF);
+      }
 
-.event-row {
-  background: #e0ebff;
-}
+      .event-row td {
+        padding: 0 60px;
+        vertical-align: middle;
 
-.event-row td {
-  padding: 0 60px;
-  vertical-align: middle;
+      }
 
-}
+      .event-date {
+        color: #5F90FF;
+        text-align: left;
+        width: 240px;
+      }
 
-.event-date {
-  color: #5F90FF;
-  text-align: left;
-  width: 240px;
-}
+      .event-name {
+        color: #457FFF;
+      }
 
-.event-name {
-  color: #457FFF;
-}
-
-.event-logo img {
-  width: 50px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
+      .event-logo img {
+        width: 50px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
 
       #about-us .container {
         display: grid;
         grid-template-columns: 60% 30%;
         justify-content: center;
+        margin-top: 80px;
 
       }
 
@@ -401,7 +409,7 @@
 
       <!-- SECTION 4 — EVENTS -->
       <section id="events" class="body-section">
-        <h2>PAST EVENTS</h2>
+        <h2>PAST EVENTS </h2>
 
         <div class="container" id="past-events">
 
@@ -425,24 +433,36 @@
             <h4>RBC Run for Kids 2024</h4>
           </div>
         </div>
-        
+
         <div class="container" id="upcoming-events">
           <h2>UPCOMING</h2>
 
           <table class="events-table">
             <tr class="event-row">
-              <td class="event-date"><h3>April 26, 2026</h3></td>
-              <td class="event-name"><h4>Mississauga Marathon</h4></td>
+              <td class="event-date">
+                <h3>April 26, 2026</h3>
+              </td>
+              <td class="event-name">
+                <h4>Mississauga Marathon</h4>
+              </td>
               <td class="event-logo"><img src="mississauga.png" alt="Mississauga Logo"></td>
             </tr>
             <tr class="event-row">
-              <td class="event-date"><h3>May 3, 2026</h3></td>
-              <td class="event-name"><h4>Toronto Marathon</h4></td>
+              <td class="event-date">
+                <h3>May 3, 2026</h3>
+              </td>
+              <td class="event-name">
+                <h4>Toronto Marathon</h4>
+              </td>
               <td class="event-logo"><img src="toronto.png" alt="Toronto Logo"></td>
             </tr>
             <tr class="event-row">
-              <td class="event-date"><h3>October 17, 2026</h3></td>
-              <td class="event-name"><h4>Waterfront Marathon</h4></td>
+              <td class="event-date">
+                <h3>October 17, 2026</h3>
+              </td>
+              <td class="event-name">
+                <h4>Waterfront Marathon</h4>
+              </td>
               <td class="event-logo"><img src="tcs.png" alt="TCS Logo"></td>
             </tr>
           </table>
@@ -456,7 +476,7 @@
           <div class="grid-item">
 
 
-            <h2>ABOUT US</h2>
+            <h2>ABOUT US</h2> 
 
             <p>CheerAngels is founded by Helen Ding, an Official Zumba Instructor, a passionate runner, and a lifelong dance enthusiast.</p>
 
