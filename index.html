@@ -57,7 +57,7 @@
       .page-container {
         max-width: 1200px;
         margin: 0 auto;
-        background: LightGray
+
       }
 
       header {
@@ -75,6 +75,7 @@
 
       .logo {
         height: 80px;
+        margin-left: 20px;
       }
 
       nav {
@@ -194,35 +195,99 @@
         background: linear-gradient(to bottom, #ECF2FF, #DEE9FF);
         color: #457FFF;
         padding: 5px 100px;
-
       }
 
       #our-beliefs .megaphone-img {
         width: 50px;
         justify-self: center;
       }
-      
-      #events .grid-item img {
-        width: 100%
+
+      #events .grid-item {
+        position: relative;
+        /* needed for h4 absolute positioning */
+        text-align: center;
       }
-      
-      
+
+      #events .grid-item img {
+        width: 100%;
+        display: block;
+        margin-bottom: 25px;
+      }
+
+
       #events #past-events {
         display: grid;
-        grid-template-columns: 44.1% 44.1%;
+        grid-template-columns: 44.2% 44.2%;
         justify-content: center;
         gap: 20px;
       }
-      
-      #events h4 {
-        text-align: center
+
+      #events h2 {
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      #events .grid-item h4 {
+        position: absolute;
+        /* layer above the image */
+        top: 280px;
+        /* distance from the top of the image */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        /* ensures it sits above the image */
+        background: linear-gradient(to bottom, #5F90FF, #457FFF);
+        color: #FFFBF7;
+        padding: 15px 30px;
+        width: max-content;
       }
       
+      #upcoming-events{
+        text-align: center;
+      }
+
+
+
+.events-table {
+  margin: 0 auto;              /* center the table */
+  border-collapse: separate;    /* allow spacing between rows */
+  border-spacing: 0 20px;      /* vertical gap between rows */
+  width: 100%;                   /* optional: control width */
+  max-width: 957px;
+}
+
+.event-row {
+  background: #e0ebff;
+}
+
+.event-row td {
+  padding: 0 60px;
+  vertical-align: middle;
+
+}
+
+.event-date {
+  color: #5F90FF;
+  text-align: left;
+  width: 240px;
+}
+
+.event-name {
+  color: #457FFF;
+}
+
+.event-logo img {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
       #about-us .container {
         display: grid;
         grid-template-columns: 60% 30%;
-        justify-content: center; 
-        
+        justify-content: center;
+
       }
 
       #about-us img {
@@ -242,188 +307,201 @@
 
   <body>
     <div class="page-container">
-      
+
       <header>
-  <div class="container header-inner">
-    <img src="header_logo.png" class="logo" alt="logo">
-    <nav>
-      <ul>
-        <li><a href="#what-we-do"> What We Do</a></li>
-        <li><a href="#our-beliefs"> Our Beliefs</a></li>
-        <li><a href="#events"> Events</a></li>
-        <li><a href="#about-us"> About Us</a></li>
-        <li><a href="#contact"> Get In Touch</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-        <section id="hero" class="body-section">
-          <div class="container">
-            <h1>Not just a dance team</h1>
-            <p>Get a move on, you belong here</p>
-            <div class="link-button">
-              <a href="/">Learn more</a>
-            </div>
-          </div>
-        </section>
-
-        <!-- SECTION 2 — WHAT WE DOS -->
-        <section id="what-we-do">
-          <h2>WHAT WE DO</h2>
-          <div class="container">
-            <div class="grid-item">
-              <img src="community_performances1.png" alt="">
-              <h4>Community Performances</h4>
-              <p>Attend a variety of cultural, fundraising, festival, and charity events.</p>
-              <p>Bringing joy, energy, and passion to public spaces.</p>
-            </div>
-
-            <div class="grid-item">
-              <img src="official_cheer_stations1.png" alt="">
-              <h4>Official Cheer Station</h4>
-              <p>Partnered with multiple Toronto marathons including:</p>
-              <ul>
-                <li>Toronto Waterfront Marathon</li>
-                <li>Toronto Marathon</li>
-                <li>Mississauga Marathon</li>
-                <li>Ottawa Marathon</li>
-              </ul>
-            </div>
-
-            <div class="grid-item">
-              <img src="group_rehearsals1.png" alt="">
-              <h4>Group Rehearsals</h4>
-              <p>Structured weekly practices learning unified choreography.</p>
-              <p>Build teamwork, confidence, and stage presence.</p>
-            </div>
-          </div>
-        </section>
-
-
-        <!-- SECTION 3 — OUR BELIEFS -->
-        <section id="our-beliefs" class="body-section">
-          <div class="container">
-
-            <!-- TOP FULL-WIDTH IMAGE -->
-            <img class="top-image" src="our_beliefs_top1.png" alt="">
-
-            <!-- TWO-COLUMN GRID: TITLE LEFT, TEXT RIGHT -->
-            <div class="beliefs-grid">
-              <div class="left">
-                <h2>OUR BELIEFS</h2>
-              </div>
-
-              <div class="right">
-                <p>CheerAngels is not just a dance team. We are an energy machine, fuelling runners
-                  with warmth and spirit. We cheer as runners and we dance with passion.</p>
-
-                <p>For those who want to stay healthy, build confidence, or put on a show.</p>
-              </div>
-            </div>
-
-            <div class="quote-row">
-              <h3 class="beliefs-quote">
-                “We are runners who can dance,<br> and dancers who cheer with all their hearts!”
-              </h3>
-
-              <img class="megaphone-img" src="our_beliefs_megaphone.png" alt="megaphone image">
-            </div>
-          </div>
-        </section>
-
-
-        <!-- SECTION 4 — EVENTS -->
-        <section id="events" class="body-section">
-            <h2>EVENTS</h2>
-            <h3>Past Events</h3>
-          
-          <div class="container" id="past-events">
-              
-            <div class="grid-item">
-              <img src="waterfront_2023_1.png" alt="description of image">
-              <h4>Waterfront Marathon 2023</h4>   
-            </div>
-            
-            <div class="grid-item">
-              <img src="toronto_2023.png" alt="description of image">
-              <h4>Toronto Marathon 2023</h4>
-            </div>
-            
-            <div class="grid-item">
-              <img src="missisauga_2024.png"  alt="description of image">
-              <h4>Mississauga Marathon 2024</h4>
-            </div>
-            
-            <div class="grid-item">
-              <img src="rbc_2024.png" class="section" alt="description of image">
-              <h4>RBC Run for Kids 2024</h4>
-            </div>
-          </div>
-          <div class="container" id="upcoming-events">
-            <h3>Upcoming Events</h3>
+        <div class="container header-inner">
+          <img src="header_logo.png" class="logo" alt="logo">
+          <nav>
             <ul>
-              <li>April 26, 2026 — Mississauga Marathon</li>
-              <li>May 3, 2026 — Toronto Marathon</li>
-              <li>October 17, 2026 — Waterfront Marathon</li>
+              <li><a href="#what-we-do"> What We Do</a></li>
+              <li><a href="#our-beliefs"> Our Beliefs</a></li>
+              <li><a href="#events"> Events</a></li>
+              <li><a href="#about-us"> About Us</a></li>
+              <li><a href="#contact"> Get In Touch</a></li>
             </ul>
-          </div>
-        </section>
-
-
-        <!-- SECTION 5 — ABOUT US -->
-        <section id="about-us" class="body-section">
-          <div class="container">
-            <div class="grid-item">
-
-
-              <h2>ABOUT US</h2>
-
-              <p>CheerAngels is founded by Helen Ding, an Official Zumba Instructor, a passionate runner, and a lifelong dance enthusiast.</p>
-
-              <p>Over the past few years, she has led the team to cheer at major marathon events across Toronto, bringing energy and encouragement through music, movement, and genuine passion.</p>
-
-              <p>Helen insists on high-quality performance standards and values the true spirit of marathon running. She volunteers her time to lead the team and believes in cheering with real love and action.</p>
-
-              <p>CheerAngels began as a small team in 2020. Five years later, we have grown into a powerful and united community of spirited volunteers. In 2025 we were crowned <b>Champion Cheer Station at the 2025 TCS Toronto Waterfront Marathon.</b></p>
-            </div>
-            <div class="grid-item">
-              <img src="about_us_helen.png" alt="">
-            </div>
-          </div>
-        </section>
-
-
-        <!-- SECTION 6 — CONTACT -->
-        <section id="contact" class="body-section">
-          <div class="container">
-            <h2>CONTACT</h2>
-
-            <p>Email: <a href="mailto:cheerangelstoronto@gmail.com">cheerangelstoronto@gmail.com</a></p>
-            <p>Phone: 647-512-5124</p>
-
-            <div class="link-button">
-              <a href="#">Start dancing today!</a>
-            </div>
-
-            <h3>Follow Us</h3>
-            <ul>
-              <li>Instagram</li>
-              <li>WeChat</li>
-              <li>Facebook</li>
-              <li>Email</li>
-            </ul>
-          </div>
-        </section>
-
-      </div>
-
-      <!-- FOOTER -->
-      <footer>
-        <div class="container">
-          <p>© 2025 CheerAngels. All rights reserved.</p>
+          </nav>
         </div>
-      </footer>
+      </header>
+
+
+      <section id="hero" class="body-section">
+        <div class="container">
+          <h1>Not just a dance team</h1>
+          <p>Get a move on, you belong here</p>
+          <div class="link-button">
+            <a href="/">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2 — WHAT WE DOS -->
+      <section id="what-we-do">
+        <h2>WHAT WE DO</h2>
+        <div class="container">
+          <div class="grid-item">
+            <img src="community_performances1.png" alt="">
+            <h4>Community Performances</h4>
+            <p>Attend a variety of cultural, fundraising, festival, and charity events.</p>
+            <p>Bringing joy, energy, and passion to public spaces.</p>
+          </div>
+
+          <div class="grid-item">
+            <img src="official_cheer_stations1.png" alt="">
+            <h4>Official Cheer Station</h4>
+            <p>Partnered with multiple Toronto marathons including:</p>
+            <ul>
+              <li>Toronto Waterfront Marathon</li>
+              <li>Toronto Marathon</li>
+              <li>Mississauga Marathon</li>
+              <li>Ottawa Marathon</li>
+            </ul>
+          </div>
+
+          <div class="grid-item">
+            <img src="group_rehearsals1.png" alt="">
+            <h4>Group Rehearsals</h4>
+            <p>Structured weekly practices learning unified choreography.</p>
+            <p>Build teamwork, confidence, and stage presence.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SECTION 3 — OUR BELIEFS -->
+      <section id="our-beliefs" class="body-section">
+        <div class="container">
+
+          <!-- TOP FULL-WIDTH IMAGE -->
+          <img class="top-image" src="our_beliefs_top1.png" alt="">
+
+          <!-- TWO-COLUMN GRID: TITLE LEFT, TEXT RIGHT -->
+          <div class="beliefs-grid">
+            <div class="left">
+              <h2>OUR BELIEFS</h2>
+            </div>
+
+            <div class="right">
+              <p>CheerAngels is not just a dance team. We are an energy machine, fuelling runners
+                with warmth and spirit. We cheer as runners and we dance with passion.</p>
+
+              <p>For those who want to stay healthy, build confidence, or put on a show.</p>
+            </div>
+          </div>
+
+          <div class="quote-row">
+            <h3 class="beliefs-quote">
+              “We are runners who can dance,<br> and dancers who cheer with all their hearts!”
+            </h3>
+
+            <img class="megaphone-img" src="our_beliefs_megaphone.png" alt="megaphone image">
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SECTION 4 — EVENTS -->
+      <section id="events" class="body-section">
+        <h2>PAST EVENTS</h2>
+
+        <div class="container" id="past-events">
+
+          <div class="grid-item">
+            <img src="waterfront_2023_1.png" alt="description of image">
+            <h4>Waterfront Marathon 2023</h4>
+          </div>
+
+          <div class="grid-item">
+            <img src="toronto_2023.png" alt="description of image">
+            <h4>Toronto Marathon 2023</h4>
+          </div>
+
+          <div class="grid-item">
+            <img src="missisauga_2024.png" alt="description of image">
+            <h4>Mississauga Marathon 2024</h4>
+          </div>
+
+          <div class="grid-item">
+            <img src="rbc_2024.png" class="section" alt="description of image">
+            <h4>RBC Run for Kids 2024</h4>
+          </div>
+        </div>
+        
+        <div class="container" id="upcoming-events">
+          <h2>UPCOMING</h2>
+
+          <table class="events-table">
+            <tr class="event-row">
+              <td class="event-date"><h3>April 26, 2026</h3></td>
+              <td class="event-name"><h4>Mississauga Marathon</h4></td>
+              <td class="event-logo"><img src="mississauga.png" alt="Mississauga Logo"></td>
+            </tr>
+            <tr class="event-row">
+              <td class="event-date"><h3>May 3, 2026</h3></td>
+              <td class="event-name"><h4>Toronto Marathon</h4></td>
+              <td class="event-logo"><img src="toronto.png" alt="Toronto Logo"></td>
+            </tr>
+            <tr class="event-row">
+              <td class="event-date"><h3>October 17, 2026</h3></td>
+              <td class="event-name"><h4>Waterfront Marathon</h4></td>
+              <td class="event-logo"><img src="tcs.png" alt="TCS Logo"></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+
+      <!-- SECTION 5 — ABOUT US -->
+      <section id="about-us" class="body-section">
+        <div class="container">
+          <div class="grid-item">
+
+
+            <h2>ABOUT US</h2>
+
+            <p>CheerAngels is founded by Helen Ding, an Official Zumba Instructor, a passionate runner, and a lifelong dance enthusiast.</p>
+
+            <p>Over the past few years, she has led the team to cheer at major marathon events across Toronto, bringing energy and encouragement through music, movement, and genuine passion.</p>
+
+            <p>Helen insists on high-quality performance standards and values the true spirit of marathon running. She volunteers her time to lead the team and believes in cheering with real love and action.</p>
+
+            <p>CheerAngels began as a small team in 2020. Five years later, we have grown into a powerful and united community of spirited volunteers. In 2025 we were crowned <b>Champion Cheer Station at the 2025 TCS Toronto Waterfront Marathon.</b></p>
+          </div>
+          <div class="grid-item">
+            <img src="about_us_helen.png" alt="">
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SECTION 6 — CONTACT -->
+      <section id="contact" class="body-section">
+        <div class="container">
+          <h2>CONTACT</h2>
+
+          <p>Email: <a href="mailto:cheerangelstoronto@gmail.com">cheerangelstoronto@gmail.com</a></p>
+          <p>Phone: 647-512-5124</p>
+
+          <div class="link-button">
+            <a href="#">Start dancing today!</a>
+          </div>
+
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Instagram</li>
+            <li>WeChat</li>
+            <li>Facebook</li>
+            <li>Email</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p>© 2025 CheerAngels. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
