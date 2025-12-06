@@ -94,8 +94,9 @@
         display: inline-block;
         font-size: 1em;
         text-align: right;
-
       }
+      
+
 
       nav a {
         text-decoration: none;
@@ -103,10 +104,23 @@
         margin-right: 20px;
 
       }
+      
 
       nav a:hover {
         text-decoration: underline;
         color: #8BAEFF;
+      }
+      
+      nav #button a{
+        background: linear-gradient(to bottom, #5F90FF, #457FFF);
+        color: white;
+        padding: 7px 20px;
+        border-radius: 3px;
+      }
+      
+      nav #button a:hover {
+        background: #457FFF;
+        text-decoration: none;
       }
 
       section {
@@ -388,7 +402,7 @@
               <li><a href="#our-beliefs"> Our Beliefs</a></li>
               <li><a href="#events"> Events</a></li>
               <li><a href="#about-us"> About Us</a></li>
-              <li><a href="#contact"> Get In Touch</a></li>
+              <li id="button"><a href="#contact"> Get In Touch</a></li>
             </ul>
           </nav>
         </div>
