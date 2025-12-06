@@ -11,7 +11,7 @@
 
     <style>
       h1 {
-        font-family: "Hunters"; /* Choose a name for your font */
+        font-family: "Hunters";
         src: url("Hunters.otf") format("otf");
         font-size: 100px;
         font-weight: 1;
@@ -19,10 +19,10 @@
         color: #FBFCFF;
         margin: 0;
       }
-      
+
       h2 {
         font-family: "DM Sans", sans-serif;
-        font-size: 80x;
+        font-size: 32px;
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
@@ -105,7 +105,7 @@
         font-size: 1em;
         text-align: right;
       }
-      
+
 
 
       nav a {
@@ -114,20 +114,20 @@
         margin-right: 20px;
 
       }
-      
+
 
       nav a:hover {
         text-decoration: underline;
         color: #8BAEFF;
       }
-      
-      nav #button a{
+
+      nav #button a {
         background: linear-gradient(to bottom, #5F90FF, #457FFF);
         color: #FBFCFF;
         padding: 7px 20px;
         border-radius: 3px;
       }
-      
+
       nav #button a:hover {
         background: #457FFF;
         text-decoration: none;
@@ -151,7 +151,7 @@
         margin: 0 auto;
         color: #FFFBF7;
       }
-      
+
       #hero .container #sub {
         position: relative;
         top: 170px;
@@ -166,8 +166,8 @@
         color: #457FFF;
         border-radius: 3px;
       }
-      
-      #hero a:hover{
+
+      #hero a:hover {
         background: #ECF2FF;
       }
 
@@ -219,7 +219,6 @@
         display: block;
       }
 
-      /* TWO-COLUMN GRID */
       #our-beliefs .beliefs-grid {
         display: grid;
         grid-template-columns: 30% 70%;
@@ -246,7 +245,6 @@
 
       #our-beliefs .megaphone-img {
         width: 50px;
-        justify-self: center;
       }
 
       #events .grid-item {
@@ -311,6 +309,7 @@
 
       .event-row td {
         padding: 0 30px;
+        padding-left: 50px;
         vertical-align: middle;
 
       }
@@ -354,9 +353,8 @@
 
       #contact .container {
         display: flex;
-        grid-template-columns: 60% 40%;
         justify-content: center;
-        gap: 475px;
+        gap: 456px;
         align-items: center;
         padding-bottom: 60px;
       }
@@ -370,14 +368,13 @@
 
       #contact a {
         text-decoration: underline;
-        color: #FFFBF7;
+        color: #FBFCFF;
       }
 
       #contact a:hover {
         text-decoration: underline;
-        color: #8BAEFF;
+        color: #ECF2FF;
       }
-
 
 
       footer {
@@ -385,20 +382,18 @@
         padding: 0px 0;
         background: linear-gradient(to bottom, #ECF2FF, #FBFCFF);
       }
-      
+
       footer .container {
         display: flex;
         grid-template-columns: 40% 40%;
         justify-content: right;
         padding: 20px;
       }
-      
+
       footer .container img {
         margin: 0;
         height: 50px;
       }
-      
-      
     </style>
   </head>
 
@@ -423,19 +418,18 @@
       </header>
 
 
-      <section id="hero" class="body-section">
+      <section id="hero">
         <div class="container">
           <h1>Not just a dance team</h1>
-            <p>
-              <a href="#about-us">Learn More</a>
-            </p>
-          
-            <p id="sub">Get a move on, you belong here</p>
-          
+          <p>
+            <a href="#our-beliefs">Learn More</a>
+          </p>
+
+          <p id="sub">Get a move on, you belong here.</p>
+
         </div>
       </section>
 
-      <!-- SECTION 2 — WHAT WE DOS -->
       <section id="what-we-do">
         <h2>WHAT WE DO</h2>
         <div class="container">
@@ -468,14 +462,11 @@
       </section>
 
 
-      <!-- SECTION 3 — OUR BELIEFS -->
-      <section id="our-beliefs" class="body-section">
+      <section id="our-beliefs">
         <div class="container">
 
-          <!-- TOP FULL-WIDTH IMAGE -->
           <img class="top-image" src="our_beliefs_top1.png" alt="CheerAngels members holding out their hands to high five marathon runners.">
 
-          <!-- TWO-COLUMN GRID: TITLE LEFT, TEXT RIGHT -->
           <div class="beliefs-grid">
             <div class="left">
               <h2>OUR BELIEFS</h2>
@@ -500,8 +491,7 @@
       </section>
 
 
-      <!-- SECTION 4 — EVENTS -->
-      <section id="events" class="body-section">
+      <section id="events">
         <h2>PAST EVENTS </h2>
 
         <div class="container" id="past-events">
@@ -563,8 +553,8 @@
       </section>
 
 
-      <!-- SECTION 5 — ABOUT US -->
-      <section id="about-us" class="body-section">
+
+      <section id="about-us">
         <div class="container">
           <div class="grid-item">
 
@@ -586,8 +576,7 @@
       </section>
 
 
-      <!-- SECTION 6 — CONTACT -->
-      <section id="contact" class="body-section">
+      <section id="contact">
         <h2>CONTACT</h2>
         <div class="container">
 
@@ -603,10 +592,10 @@
 
         </div>
       </section>
-      <!-- FOOTER -->
+
       <footer>
         <div class="container">
-            <img src="header_logo.png" class="logo" alt="CheerAngels Logo: a girl with angel wings and a megaphone with the words 'cheerangels runners who can dance.'">
+          <img src="header_logo.png" class="logo" alt="CheerAngels Logo: a girl with angel wings and a megaphone with the words 'cheerangels runners who can dance.'">
         </div>
       </footer>
     </div>
