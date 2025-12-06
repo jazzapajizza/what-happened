@@ -57,6 +57,7 @@
       .page-container {
         max-width: 1200px;
         margin: 0 auto;
+        background: #FBFCFF;
       }
 
       header {
@@ -66,7 +67,7 @@
         width: 100%;
         margin: 0 auto;
         height: 80px;
-        background: linear-gradient(to bottom, white, #ECF2FF);
+        background: linear-gradient(to bottom, #FBFCFF, #ECF2FF);
         list-style: none;
         display: inline-block;
         align-items: left;
@@ -155,7 +156,7 @@
         text-align: center;
         padding: 50px 30px;
         padding-bottom: 80px;
-        color: #FFFBF7;
+        color: #FBFCFF;
       }
 
       #what-we-do p {
@@ -214,7 +215,6 @@
 
       #events .grid-item {
         position: relative;
-        /* needed for h4 absolute positioning */
         text-align: center;
       }
 
@@ -239,17 +239,15 @@
 
       #events .grid-item h4 {
         position: absolute;
-        /* layer above the image */
         top: 280px;
-        /* distance from the top of the image */
         left: 50%;
         transform: translateX(-50%);
         z-index: 10;
-        /* ensures it sits above the image */
         background: linear-gradient(to bottom, #5F90FF, #457FFF);
-        color: #FFFBF7;
-        padding: 15px 30px;
-        width: max-content;
+        color: #FBFCFF;
+        padding: 18px 40px;
+        width: max-content; 
+        
       }
 
       #upcoming-events {
@@ -263,13 +261,9 @@
 
       .events-table {
         margin: 0 auto;
-        /* center the table */
         border-collapse: separate;
-        /* allow spacing between rows */
         border-spacing: 0 20px;
-        /* vertical gap between rows */
         width: 100%;
-        /* optional: control width */
         max-width: 957px;
       }
 
@@ -310,7 +304,7 @@
 
       #about-us img {
         display: block;
-        width: 100%;
+        width: 360px;
         margin: 40px 0;
       }
 
@@ -324,15 +318,16 @@
         display: flex;
         grid-template-columns: 60% 40%;
         justify-content: center;
-        gap: 400px;
+        gap: 475px;
         align-items: center;
-        padding-bottom: 50px;
+        padding-bottom: 60px;
       }
 
       #contact h2 {
         color: #FFFBF7;
         text-align: center;
         padding-top: 40px;
+        margin: 0px;
       }
 
       #contact a {
@@ -348,11 +343,11 @@
 
 
       footer {
-        margin: 20px;
-        background: #f2f2f2;
-        padding: 40px 0;
-        
+        width: 100%;
+        padding: 20px 0;
+        background: linear-gradient(to bottom, #ECF2FF, #FBFCFF);
       }
+      
     </style>
   </head>
 
@@ -361,7 +356,9 @@
 
       <header>
         <div class="container header-inner">
-          <img src="header_logo.png" class="logo" alt="logo">
+          <a href="#hero">
+            <img src="header_logo.png" class="logo" alt="logo">
+          </a>
           <nav>
             <ul>
               <li><a href="#what-we-do"> What We Do</a></li>
@@ -399,7 +396,7 @@
 
           <div class="grid-item">
             <img src="official_cheer_stations1.png" alt="">
-            <h4>Official Cheer Station</h4>
+            <h4>Official Cheer Stations</h4>
             <p>Partnered with multiple Toronto marathons including:</p>
             <ul>
               <li>Toronto Waterfront Marathon</li>
@@ -524,9 +521,9 @@
 
             <p>CheerAngels is founded by Helen Ding, an Official Zumba Instructor, a passionate runner, and a lifelong dance enthusiast.</p>
 
-            <p>Over the past few years, she has led the team to cheer at major marathon events across Toronto, bringing energy and encouragement through music, movement, and genuine passion.</p>
+            <p>Over the past few years, she has led the team to cheer at major marathon events across Toronto, bringing energy and encouragement through music and  movement.</p>
 
-            <p>Helen insists on high-quality performance standards and values the true spirit of marathon running. She volunteers her time to lead the team and believes in cheering with real love and action.</p>
+            <p>Helen insists on high-quality performance standards and values the true spirit of marathon running. She volunteers her time to lead the team and believes in cheering with real love and passion.</p>
 
             <p>CheerAngels began as a small team in 2020. Five years later, we have grown into a powerful and united community of spirited volunteers. In 2025 we were crowned <b>Champion Cheer Station at the 2025 TCS Toronto Waterfront Marathon.</b></p>
           </div>
@@ -545,7 +542,7 @@
           <div class="grid-object">
 
 
-            <p>Email: <a href="mailto:cheerangelstoronto@gmail.com">cheerangelstoronto@gmail.com</a><br>Phone: (647)-302-5721</p>
+            <p>Email: <a href="mailto: j432lu@uwaterloo.ca">j432lu@uwaterloo.ca</a><br>Phone: (647)-302-5721</br>WeChat: Helendingece</p>
             <h4>Start dancing today!</h4>
           </div>
 
@@ -554,13 +551,14 @@
           </div>
         </div>
       </section>
-
-    </div>
-
-    <!-- FOOTER -->
+      <!-- FOOTER -->
     <footer>
       <div class="container">
         <p>© 2025 CheerAngels. All rights reserved.</p>
+
+    </div>
+
+
       </div>
     </footer>
   </body>
