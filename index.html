@@ -57,12 +57,12 @@
       .page-container {
         max-width: 1200px;
         margin: 0 auto;
-
       }
 
       header {
         position: sticky;
         top: 0;
+        z-index: 1000;
         width: 100%;
         margin: 0 auto;
         height: 80px;
@@ -76,8 +76,8 @@
       }
 
       .logo {
-        height: 80px;
-        margin-left: 20px;
+        height: 70px;
+        margin-left: 30px;
       }
 
       nav {
@@ -108,7 +108,10 @@
         color: #8BAEFF;
       }
 
-
+      section {
+        scroll-margin-top: 120px;
+      }
+      
       #hero {
         background-size: cover;
         background-image: url('hero_back2.png');
@@ -132,7 +135,8 @@
         align-items: center;
         text-decoration: none;
       }
-
+      
+      
       #what-we-do .container {
         display: grid;
         grid-template-columns: 30% 30% 30%;
@@ -169,7 +173,10 @@
         padding: 0;
         text-align: center;
       }
-
+      
+      #our-beliefs {
+        scroll-margin-top: 80px;
+      }
 
       #our-beliefs .top-image {
         width: 100%;
