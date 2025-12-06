@@ -110,15 +110,15 @@
       }
 
       section {
-        scroll-margin-top: 120px;
+        scroll-margin-top: 140px;
       }
-      
+
       #hero {
         background-size: cover;
         background-image: url('hero_back2.png');
         background-position: center;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
       }
 
       #hero .container {
@@ -129,15 +129,21 @@
       }
 
       #hero a {
-        background-color: #fff;
+        background: linear-gradient(to bottom, #FBFCFF, #ECF2FF);
         padding: 7px 20px;
         text-align: center;
         justify-content: center;
         align-items: center;
         text-decoration: none;
+        color: #457FFF;
+        border-radius: 3px;
       }
       
-      
+      #hero a:hover{
+        background: #ECF2FF;
+      }
+
+
       #what-we-do .container {
         display: grid;
         grid-template-columns: 30% 30% 30%;
@@ -157,6 +163,7 @@
         padding: 50px 30px;
         padding-bottom: 80px;
         color: #FBFCFF;
+        border-radius: 3px;
       }
 
       #what-we-do p {
@@ -174,7 +181,7 @@
         padding: 0;
         text-align: center;
       }
-      
+
       #our-beliefs {
         scroll-margin-top: 80px;
       }
@@ -206,6 +213,7 @@
         background: linear-gradient(to bottom, #ECF2FF, #DEE9FF);
         color: #457FFF;
         padding: 5px 100px;
+        border-radius: 3px;
       }
 
       #our-beliefs .megaphone-img {
@@ -222,6 +230,7 @@
         width: 100%;
         display: block;
         margin-bottom: 25px;
+        border-radius: 3px;
       }
 
 
@@ -246,8 +255,8 @@
         background: linear-gradient(to bottom, #5F90FF, #457FFF);
         color: #FBFCFF;
         padding: 18px 40px;
-        width: max-content; 
-        
+        width: max-content;
+        border-radius: 3px;
       }
 
       #upcoming-events {
@@ -269,6 +278,7 @@
 
       .event-row {
         background: linear-gradient(to bottom, #ECF2FF, #DEE9FF);
+        border-radius: 3px;
       }
 
       .event-row td {
@@ -344,9 +354,22 @@
 
       footer {
         width: 100%;
-        padding: 20px 0;
+        padding: 0px 0;
         background: linear-gradient(to bottom, #ECF2FF, #FBFCFF);
       }
+      
+      footer .container {
+        display: flex;
+        grid-template-columns: 40% 40%;
+        justify-content: right;
+        padding: 20px;
+      }
+      
+      footer .container img {
+        margin: 0;
+        height: 50px;
+      }
+      
       
     </style>
   </head>
@@ -357,7 +380,7 @@
       <header>
         <div class="container header-inner">
           <a href="#hero">
-            <img src="header_logo.png" class="logo" alt="logo">
+            <img src="header_logo.png" class="logo" alt="CheerAngels Logo: a girl with angel wings and a megaphone with the words 'cheerangels runners who can dance.'">
           </a>
           <nav>
             <ul>
@@ -376,10 +399,10 @@
         <div class="container">
           <h1>Not just a dance team</h1>
           <p>Get a move on, you belong here</p>
-          <div class="link-button">
+
             <p>
-            <a href="/">Learn More</a></p>
-          </div>
+              <a href="#about-us">Learn More</a>
+            </p>
         </div>
       </section>
 
@@ -388,14 +411,14 @@
         <h2>WHAT WE DO</h2>
         <div class="container">
           <div class="grid-item">
-            <img src="community_performances1.png" alt="">
+            <img src="community_performances1.png" alt="Highfive Icon.">
             <h4>Community Performances</h4>
             <p>Attend a variety of cultural, fundraising, festival, and charity events.</p>
             <p>Bringing joy, energy, and passion to public spaces.</p>
           </div>
 
           <div class="grid-item">
-            <img src="official_cheer_stations1.png" alt="">
+            <img src="official_cheer_stations1.png" alt="Medal Icon.">
             <h4>Official Cheer Stations</h4>
             <p>Partnered with multiple Toronto marathons including:</p>
             <ul>
@@ -407,7 +430,7 @@
           </div>
 
           <div class="grid-item">
-            <img src="group_rehearsals1.png" alt="">
+            <img src="group_rehearsals1.png" alt="Speaker Icon.">
             <h4>Group Rehearsals</h4>
             <p>Structured weekly practices learning unified choreography.</p>
             <p>Build teamwork, confidence, and stage presence.</p>
@@ -421,7 +444,7 @@
         <div class="container">
 
           <!-- TOP FULL-WIDTH IMAGE -->
-          <img class="top-image" src="our_beliefs_top1.png" alt="">
+          <img class="top-image" src="our_beliefs_top1.png" alt="CheerAngels members holding out their hands to high five marathon runners.">
 
           <!-- TWO-COLUMN GRID: TITLE LEFT, TEXT RIGHT -->
           <div class="beliefs-grid">
@@ -442,7 +465,7 @@
               “We are runners who can dance,<br> and dancers who cheer with all their hearts!”
             </h3>
 
-            <img class="megaphone-img" src="our_beliefs_megaphone.png" alt="megaphone image">
+            <img class="megaphone-img" src="our_beliefs_megaphone.png" alt="megaphone icon">
           </div>
         </div>
       </section>
@@ -455,22 +478,22 @@
         <div class="container" id="past-events">
 
           <div class="grid-item">
-            <img src="waterfront_2023_1.png" alt="description of image">
+            <img src="waterfront_2023_1.png" alt="CheerAngels group photo at Toronto Waterfront Marathon.">
             <h4>Waterfront Marathon 2023</h4>
           </div>
 
           <div class="grid-item">
-            <img src="toronto_2023.png" alt="description of image">
+            <img src="toronto_2023.png" alt="CheerAngels group photo at Toronto Marathon.">
             <h4>Toronto Marathon 2023</h4>
           </div>
 
           <div class="grid-item">
-            <img src="missisauga_2024.png" alt="description of image">
+            <img src="missisauga_2024.png" alt="CheerAngels group photo at Missisauga Marathon.">
             <h4>Mississauga Marathon 2024</h4>
           </div>
 
           <div class="grid-item">
-            <img src="rbc_2024.png" class="section" alt="description of image">
+            <img src="rbc_2024.png" class="section" alt="CheerAngels group photo at RBC Marathon.">
             <h4>RBC Run for Kids 2024</h4>
           </div>
         </div>
@@ -486,7 +509,7 @@
               <td class="event-name">
                 <h4>Mississauga Marathon</h4>
               </td>
-              <td class="event-logo"><img src="mississauga_2026.png" alt="Mississauga Logo"></td>
+              <td class="event-logo"><img src="mississauga_2026.png" alt="Mississauga Marathon Logo"></td>
             </tr>
             <tr class="event-row">
               <td class="event-date">
@@ -495,7 +518,7 @@
               <td class="event-name">
                 <h4>Toronto Marathon</h4>
               </td>
-              <td class="event-logo"><img src="toronto_2026.png" alt="Toronto Logo"></td>
+              <td class="event-logo"><img src="toronto_2026.png" alt="Toronto Marathon Logo"></td>
             </tr>
             <tr class="event-row">
               <td class="event-date">
@@ -504,7 +527,7 @@
               <td class="event-name">
                 <h4>Waterfront Marathon</h4>
               </td>
-              <td class="event-logo"><img src="waterfront_2026.png" alt="TCS Logo"></td>
+              <td class="event-logo"><img src="waterfront_2026.png" alt="Waterfron Marathon Logo"></td>
             </tr>
           </table>
         </div>
@@ -521,14 +544,14 @@
 
             <p>CheerAngels is founded by Helen Ding, an Official Zumba Instructor, a passionate runner, and a lifelong dance enthusiast.</p>
 
-            <p>Over the past few years, she has led the team to cheer at major marathon events across Toronto, bringing energy and encouragement through music and  movement.</p>
+            <p>Over the past few years, she has led the team to cheer at major marathon events across Toronto, bringing energy and encouragement through music and movement.</p>
 
             <p>Helen insists on high-quality performance standards and values the true spirit of marathon running. She volunteers her time to lead the team and believes in cheering with real love and passion.</p>
 
             <p>CheerAngels began as a small team in 2020. Five years later, we have grown into a powerful and united community of spirited volunteers. In 2025 we were crowned <b>Champion Cheer Station at the 2025 TCS Toronto Waterfront Marathon.</b></p>
           </div>
           <div class="grid-item">
-            <img src="about_us_helen.png" alt="">
+            <img src="about_us_helen.png" alt="Picture of Helen Ding wearing a pink shirt and dancing with rainbow ribbons and pompoms, a smile on her face.">
           </div>
         </div>
       </section>
@@ -542,24 +565,21 @@
           <div class="grid-object">
 
 
-            <p>Email: <a href="mailto: j432lu@uwaterloo.ca">j432lu@uwaterloo.ca</a><br>Phone: (647)-302-5721</br>WeChat: Helendingece</p>
-            <h4>Start dancing today!</h4>
+            <p>Email: <a href="mailto: j432lu@uwaterloo.ca">j432lu@uwaterloo.ca</a><br>Phone: (647)-302-5721<br>WeChat: Helendingece</p>
+            <h4>Get your wings today!</h4>
           </div>
 
-          <div class="grid-object">
-            <img src="wechat.png" alt="description of image">
-          </div>
+
+          <img src="wechat.png" alt="WeChat QR code.">
+
         </div>
       </section>
       <!-- FOOTER -->
-    <footer>
-      <div class="container">
-        <p>© 2025 CheerAngels. All rights reserved.</p>
-
+      <footer>
+        <div class="container">
+            <img src="header_logo.png" class="logo" alt="CheerAngels Logo: a girl with angel wings and a megaphone with the words 'cheerangels runners who can dance.'">
+        </div>
+      </footer>
     </div>
-
-
-      </div>
-    </footer>
   </body>
 </html>
